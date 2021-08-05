@@ -19,11 +19,11 @@ export class ContactPage implements OnInit {
 
   onSubmit(){
     if (!this.sub || !this.comment) {
-      this.global.CreateToast(`Please type something first!`)
+      this.global.CreateToast(`Escribe algo primero!`)
     }else{
       this.socialSharing.canShareViaEmail().then(() =>{
         this.socialSharing.shareViaEmail(this.comment,this.sub,this.email).then(() =>{
-          console.log(`Email sent`)
+          console.log(`Email enviado`)
         }).catch(err =>{
           this.global.CreateToast(err)
         })

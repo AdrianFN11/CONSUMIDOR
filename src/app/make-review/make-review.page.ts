@@ -46,9 +46,9 @@ export class MakeReviewPage implements OnInit {
   }
   onSubmit() {
     if (!this.rating || !this.sub || !this.comment ) {
-      this.global.CreateToast(`Please type something first!`)
+      this.global.CreateToast(`Escribe algo primero!`)
     }else{
-      this.global.presentLoading(`Please wait!`)
+      this.global.presentLoading(`Por favor espere!`)
     this.db.database.ref(`reviews`).child(this.data.id).child(this.uid).update({
       cId: this.data.id,
       rating: this.rating,
