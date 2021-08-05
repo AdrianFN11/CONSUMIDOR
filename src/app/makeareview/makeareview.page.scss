@@ -13,7 +13,7 @@ ion-toolbar {
     ion-grid{
         background-color: blue;
         width: 415px;
-        height: 210px;
+        height: 190px;
         position: relative;
 
         
@@ -27,6 +27,7 @@ ion-toolbar {
         --border-color: blue;
         }
 
+        h2{text-align: center; color: white;}
 
 }
 ion-content {
