@@ -13,7 +13,7 @@ ion-header,ion-toolbar{
 
   ion-grid{
     background-color:blue ;
-    width: 415px;
+    width: auto;
     height: 215;
     position: relative;
     
@@ -23,7 +23,8 @@ ion-header,ion-toolbar{
     h3{text-align: center; color: white ;}
     
     ion-avatar{margin: auto;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         width: 130px;
         height: 130px;
         --border-color: blue;
