@@ -1,7 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar >
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+    <ion-buttons class="back-btn" slot="start">
+      <ion-button (click)="back1()">
+        <ion-icon style="color: white;" name="arrow-back"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
   <ion-grid >

@@ -6,6 +6,7 @@ import { NavigationExtras, Router } from '@angular/router';
 import { Screenshot } from '@ionic-native/screenshot/ngx';
 import { AuthServiceService } from '../services/auth-service.service';
 import { GlobalMethods } from '../services/global';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-makeareview',
@@ -23,7 +24,8 @@ export class MakeareviewPage implements OnInit {
     private global: GlobalMethods,
     private location: Location,
     private screenshot:Screenshot,
-    private socialSharing:SocialSharing
+    private socialSharing:SocialSharing,
+    private nav:NavController
   ) { }
 
   ngOnInit() {
@@ -31,7 +33,9 @@ export class MakeareviewPage implements OnInit {
     this.title = this.router.getCurrentNavigation().extras.state.title
     // this.reviews = this.data.reviews
   }
-
+  back1(){
+    this.nav.navigateBack(['/directory'])
+  }
   
 
   ionViewWillEnter() {
@@ -72,4 +76,5 @@ export class MakeareviewPage implements OnInit {
       this.global.CreateToast(error);
     })
   }
+  
 }
