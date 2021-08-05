@@ -1,5 +1,5 @@
 ion-header,ion-toolbar{
-    --background: rgb(19, 25, 193);
+    --background: blue;
     ion-back-button {
         left: 0;
         top: 2px;
@@ -38,7 +38,7 @@ ion-content {
     .bottom-button{
         width: 80%;
         height: 40px;
-        background-color: rgb(19, 25, 193);
+        background-color: blue;
         color: white;
         margin-left: 10%;
         margin-top: 5%;

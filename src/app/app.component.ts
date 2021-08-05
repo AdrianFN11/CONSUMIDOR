@@ -9,12 +9,12 @@ import { Platform } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Directory', url: '/directory', icon: 'document' },
-    { title: 'Recent reviews', url: '/recentreviews', icon: 'eye' },
-    { title: 'Profile', url: '/profile', icon: 'person' },
-    { title: 'Logout', url: null, icon: 'log-out' },
-    { title: 'Contact', url: '/contact', icon: 'call' },
-    { title: 'About us', url: '/aboutus', icon: 'information-circle' },
+    { title: 'Perfil', url: '/profile', icon: 'person' },
+    { title: 'Inicio', url: '/directory', icon: 'home' },
+    { title: 'Recena reciente', url: '/recentreviews', icon: 'eye' },
+    { title: 'Contacto y ayuda', url: '/contact', icon: 'call' },
+    { title: 'Acerca de', url: '/aboutus', icon: 'information-circle' },
+    
   ];
   public dark:boolean = false
   constructor(private plt:Platform,

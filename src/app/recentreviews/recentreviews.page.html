@@ -3,11 +3,11 @@
     <ion-buttons class="back-btn" slot="start">
       <ion-menu-button style="color: white;"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Recent Reviews</ion-title>
+    <ion-title>Recena reciente</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-searchbar placeholder="Search" inputmode="string" type="string" [(ngModel)]="searchText" (ionChange)="searchFilterItem()" [debounce]="250"  mode="ios"></ion-searchbar>
+  <ion-searchbar placeholder="Buscar empresa" inputmode="string" type="string" [(ngModel)]="searchText" (ionChange)="searchFilterItem()" [debounce]="250"></ion-searchbar>
   <div *ngIf="searchText" >
     <ion-list>
       <ion-item lines = "none" *ngFor="let item of items" (click)="itemClick(item)">

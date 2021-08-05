@@ -1,5 +1,5 @@
 ion-header,ion-toolbar{
-    --background: rgb(19, 25, 193);
+    --background: blue;
     ion-back-button {
         left: 0;
         top: 2px;
@@ -11,16 +11,24 @@ ion-header,ion-toolbar{
         color: white;
     }
 }
-ion-content {
-    .info{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 15%;
-        p{
 
-        }
-    }
+h1{text-align: center;}
+
+h3{text-align: center; font-weight: bold;}
+
+h5{text-align: center;}
+
+h4{text-align: justify;
+  margin: 20px;
+  
 }
+
+img{height: 150px;
+    width: 155px;
+    display: block;
+    margin: auto;}
+
+
 .vertical-center {
     display: flex;
     text-align: center;

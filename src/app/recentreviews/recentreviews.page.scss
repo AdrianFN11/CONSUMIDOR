@@ -1,15 +1,20 @@
 ion-header,ion-toolbar{
-    --background: rgb(19, 25, 193);
+    --background: blue;
     ion-title {
         text-align: center;
         color: white;
     }
 }
+
+ion-searchbar{--border-radius: 1.2rem;
+    --placeholder-font-weight: 600;
+    --placeholder-opacity: 10;
+    padding: 5;
+    margin-bottom: 2rem;}
+
+
 ion-content {
-    ion-searchbar{
-        width: 90%;
-        margin-left: 5%;
-    }
+    
    ion-list{
        ion-item{
            margin: 0;

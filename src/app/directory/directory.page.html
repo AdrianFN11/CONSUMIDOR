@@ -1,14 +1,13 @@
-<ion-header class="ion-no-border"   >
+<ion-header>
   <ion-toolbar>
     <ion-buttons class="back-btn" slot="start">
       <ion-menu-button style="color: white;"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Directory</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
-  <ion-searchbar placeholder="Buscar empresa" inputmode="string" type="string" [(ngModel)]="searchText" (ionChange)="searchFilterItem()" [debounce]="250"></ion-searchbar>
 </ion-header>
 <ion-content>
- 
+  <ion-searchbar placeholder="Buscar empresa" inputmode="string" type="string" [(ngModel)]="searchText" (ionChange)="searchFilterItem()" [debounce]="250"></ion-searchbar>
 
   <div *ngIf="searchText" >
     <ion-list>
