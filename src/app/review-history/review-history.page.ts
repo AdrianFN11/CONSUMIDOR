@@ -43,13 +43,13 @@ export class ReviewHistoryPage implements OnInit {
   }
   submit(index,data){
     if (this.sub === '' || this.comment === '') {
-      this.global.CreateToast(`Please type somthing first!`)
+      this.global.CreateToast(`¡Escriba algo primero!`)
     }else{
       this.onSubmit(index,data)
     }
   }
   onSubmit(index,data) {
-    this.global.presentLoading(`Please wait!`)
+    this.global.presentLoading(`Por favor espere!`)
     this.db.database.ref(`reviews`).child(data.cId).child(this._uid).update({
       cName:data.cName,
         cId: data.cId,
@@ -59,7 +59,7 @@ export class ReviewHistoryPage implements OnInit {
         name:data.name
     }).then(() => {
       this.global.hideLoading()
-      this.global.CreateToast(`Rated successfully!`)
+      this.global.CreateToast(`¡Calificado con éxito!`)
       this.db.database.ref(`myReviews`).child(this._uid).child(data.cId).update({
         cName:data.cName,
         cId: data.cId,

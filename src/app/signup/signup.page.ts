@@ -34,15 +34,15 @@ export class SignupPage implements OnInit {
 
   signup(){
     if (this.signupForm.value.password != this.signupForm.value.confirmPassword) {
-      this.global.CreateToast(`Password must be matched!`)
+      this.global.CreateToast(`La contraseña debe coincidir!`)
     }else{
-      this.global.presentLoading(`Please wait!`)
+      this.global.presentLoading(`Por favor espere!`)
       this.authService.registerUser(this.signupForm.value).then(() =>{
         this.global.hideLoading()
         this.global.presentLoading(`Logging in`)
         this.authService.loginUser(this.signupForm.value).then(() =>{
           this.global.hideLoading()
-          this.nav.navigateForward(['/directory'])
+          this.nav.navigateForward(['/login'])
         }).catch(err =>{
           console.log(JSON.stringify(err))
           this.nav.navigateForward(['/login'])
