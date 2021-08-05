@@ -1,33 +1,33 @@
 <ion-content>
   <div class="logo">
-    <img src="../../assets/_logo.png" />
+    <img src="../../assets/images/consumidor-rd4.png" />
   </div>
   <div class="main-div">
     <ion-title>Login</ion-title>
     <div class="inputs-div">
       <form [formGroup]="loginForm">
         <ion-input formControlName = "email" type="email" placeholder="Email"></ion-input>
-        <ion-input formControlName = "password" type="password" placeholder="password"></ion-input>
+        <ion-input formControlName = "password" type="password" placeholder="Contraseña"></ion-input>
       </form>
     </div>
     <ion-button (click)="login()" fill="clear" shape="round">
-      Login
+      Entrar
     </ion-button>
     <ion-button (click)="loginWithGoogle()" fill="clear" shape="round" id="google-btn">
-      Login with Google
+      Entrar con Google
       <ion-icon name="logo-google"></ion-icon>
     </ion-button>
     <ion-row>
       <ion-col size="11">
-        <ion-label (click)="forgotPassword()">Forgot password?</ion-label>
+        <ion-label (click)="forgotPassword()">Olvidé mi contraseña</ion-label>
       </ion-col>
     </ion-row>
     <ion-row class="bottom-text vertical-center">
-      <ion-col size="8">
-        <p>Don't have an account?</p>
+      <ion-col size="7">
+        <p>No esta registrado?</p>
       </ion-col>
       <ion-col size="4">
-        <ion-label routerDirection = "forward" routerLink="/signup">signup</ion-label>
+        <ion-label routerDirection = "forward" routerLink="/signup">Crear cuenta</ion-label>
       </ion-col>
     </ion-row>
   </div>

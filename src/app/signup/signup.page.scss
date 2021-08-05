@@ -1,23 +1,19 @@
-ion-header,ion-toolbar{
-    --background: rgb(19, 25, 193);
-    ion-back-button {
-        left: 0;
-        top: 2px;
-        position: absolute;
-        color: white;
-    }
+
+    ion-toolbar{--background: blue;}
+    ion-back-button{color:  white;}
+
     ion-title {
         text-align: center;
         color: white;
     }
-}
+
 ion-content {
     ion-row {
         text-align: center;
         margin-top: 10%;
         ion-col {
             ion-label {
-                color: rgb(19, 25, 193);
+                color: blue;
                 font-size: 24px;
             }
         }
@@ -35,7 +31,7 @@ ion-content {
     .bottom-button{
         width: 80%;
         height: 40px;
-        background-color: rgb(19, 25, 193);
+        background-color: blue;
         color: white;
         margin-left: 10%;
         margin-top: 15%;

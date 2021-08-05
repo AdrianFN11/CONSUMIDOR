@@ -16,7 +16,7 @@ ion-content {
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: absolute;
-        background: rgb(19, 25, 193);
+        background: blue;
         box-shadow: 0 2px 4px 0 var(--ion-color-dark), 0 3px 10px 0 var(--ion-color-dark);
         ion-title {
             text-align: center;
@@ -42,7 +42,7 @@ ion-content {
             margin-left: 10%;
             // margin-top: 15%;
             background-color: white;
-            color: rgb(19, 25, 193);
+            color: blue;
             border-radius: 10px;
             text-transform: none;
             margin-bottom: 5%;
@@ -88,3 +88,4 @@ ion-content {
     text-align: center;
     align-items: center;
 }
+ p{text-align: center;}

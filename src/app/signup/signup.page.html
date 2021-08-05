@@ -1,29 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons class="back-btn" slot="start">
-      <ion-button (click)="back()">
-        <ion-icon style="color: rgb(19, 25, 193);" name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Create Account</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+  
+    <ion-title>Crear cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
+
+
+
 <ion-content>
   <ion-row>
     <ion-col size="12">
-      <ion-label>Welcome</ion-label>
+      <ion-label></ion-label>
     </ion-col>
   </ion-row>
   <div class="inputs-div">
     <form [formGroup]="signupForm">
-      <ion-input formControlName="fname" type="text" placeholder="Name"></ion-input>
-    <ion-input formControlName="lname" type="text" placeholder="Last name"></ion-input>
+    <ion-input formControlName="fname" type="text" placeholder="Nombre"></ion-input>
+    <ion-input formControlName="lname" type="text" placeholder="Apellido"></ion-input>
     <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
-    <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
-    <ion-input formControlName="confirmPassword" type="password" placeholder="Confirm password"></ion-input>
+    <ion-input formControlName="password" type="password" placeholder="contraseña"></ion-input>
+    <ion-input formControlName="confirmPassword" type="password" placeholder=" Confirmar contraseña"></ion-input>
     </form>
   </div>
   <ion-button (click)="signup()" fill="clear" shape="round" class="bottom-button">
-    Create Account
+    Crear cuenta
   </ion-button>
 </ion-content>
