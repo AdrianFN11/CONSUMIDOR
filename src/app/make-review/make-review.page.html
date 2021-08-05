@@ -5,9 +5,10 @@
         <ion-icon style="color: white;" name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Opinar / valorar</ion-title>
+    
   </ion-toolbar>
-  <ion-grid>
+
+  <ion-grid class="ion-no-border"  >
     <h3>Expresa su experiencia:</h3>
     <ion-avatar>
       <img [src]="data.img" />
@@ -29,7 +30,7 @@ size="default"
 <div class="inputs">
   <ion-input type="text" placeholder="Asunto"[(ngModel)]="sub"></ion-input>
 </div>
-<ion-textarea [(ngModel)]="comment" placeholder="comente aqui" cols="30" rows="10"></ion-textarea>
+<ion-textarea [(ngModel)]="comment" placeholder="Escriba aquí" cols="30" rows="10"></ion-textarea>
 <ion-button (click)="onSubmit()" fill="clear" shape="round" class="bottom-button">
   Publicar
 </ion-button>

@@ -1,4 +1,4 @@
-ion-header,ion-toolbar{ box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ion-header,ion-toolbar{
     --background: blue;
     ion-back-button {
         left: 0;
@@ -14,14 +14,16 @@ ion-header,ion-toolbar{ box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 
   ion-grid{
     background-color:blue ;
     width: 415px;
-    height: 145px;
+    height: 215;
     position: relative;
+    
     
 }
 
-    h3{text-align: center; color: white;}
+    h3{text-align: center; color: white ;}
+    
     ion-avatar{margin: auto;
-        margin-top: 30px;
+        margin-top: 20px;
         width: 130px;
         height: 130px;
         --border-color: blue;

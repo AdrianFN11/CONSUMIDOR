@@ -14,6 +14,6 @@ export class ForgotpasswordPage implements OnInit {
   }
 
   back(){
-    this.nav.navigateBack(['/login'])
+    this.nav.navigateBack(['/profile'])
   }
 }

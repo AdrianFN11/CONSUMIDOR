@@ -9,6 +9,25 @@ ion-toolbar {
         text-align: center;
         color: white;
     }
+
+    ion-grid{
+        background-color: blue;
+        width: 415px;
+        height: 210px;
+        position: relative;
+
+        
+
+          h2{text-align: center; color: white;}      
+    }
+    ion-avatar{margin: auto;
+        margin-top: 10px;
+        width: 130px;
+        height: 130px;
+        --border-color: blue;
+        }
+
+
 }
 ion-content {
     .logo {
@@ -22,12 +41,9 @@ ion-content {
         }
     }
     .company-info {
-        margin-top: 5%;
-        ion-col {
-            border-bottom: 1px solid blue;
-            margin-left: 5%;
+    
+            margin-top: 75px;
             text-align: center;
-        }
     }
     .bottom-button {
         width: 80%;

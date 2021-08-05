@@ -1,11 +1,13 @@
 <ion-header>
   <ion-toolbar>
+    
     <ion-buttons class="back-btn" slot="start">
       <ion-button (click)="back()">
         <ion-icon style="color: white;" name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Reviews History</ion-title>
+
+    <ion-title>Historail de reseña</ion-title>
   </ion-toolbar>
   </ion-header>
 
@@ -44,11 +46,11 @@
       <ion-label [hidden] = "i === itemIndex && edit === true">{{item.comment}}</ion-label>
     </div>
     <ion-button id="edit-btn" fill = "clear" [hidden] = "i === itemIndex && edit === true" (click)="editReview(i)">
-      Edit Review
+      Edit Reseña
     </ion-button>
     
     <ion-button id="sub"color="success"  *ngIf="edit && i === itemIndex"  (click)="submit(i,item)">
-      Submit
+      Guardar
     </ion-button>
 
     <ion-button  color="danger" *ngIf="edit && i === itemIndex" (click)="cancel(i)">

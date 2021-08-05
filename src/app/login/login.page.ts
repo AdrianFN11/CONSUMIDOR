@@ -26,7 +26,7 @@ export class LoginPage implements OnInit {
     })
   }
   login(){
-    this.global.presentLoading(`Loggin in`)
+    this.global.presentLoading(`Iniciando sesión `)
     this.authService.loginUser(this.loginForm.value).then(() =>{
       this.global.hideLoading()
       this.nav.navigateForward(['/directory'])
