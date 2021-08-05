@@ -12,7 +12,7 @@ export class AppComponent {
     { title: 'Inicio', url: '/directory', icon: 'home' },
     { title: 'Perfil', url: '/profile', icon: 'person' },
     { title: 'Reseña reciente', url: '/recentreviews', icon: 'eye' },
-    { title: 'Contacto y ayuda', url: '/contact', icon: 'call' },
+    { title: 'Contacto y ayuda', url: '/contact', icon: 'paper-plane' },
     { title: 'Acerca de', url: '/aboutus', icon: 'information-circle' },
     
   ];
