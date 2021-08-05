@@ -11,9 +11,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Inicio', url: '/directory', icon: 'home' },
     { title: 'Perfil', url: '/profile', icon: 'person' },
-    { title: 'Reseña reciente', url: '/recentreviews', icon: 'chatbox-ellipses' },  
-    { title: 'Contacto y ayuda', url: '/contact', icon: 'paper-plane' },
-    { title: 'Acerca de', url: '/aboutus', icon: 'information-circle' },
+    { title: 'Reseñas Recientes', url: '/recentreviews', icon: 'chatbox-ellipses' },  
+    { title: 'Contacto', url: '/contact', icon: 'paper-plane' },
+    { title: 'Nosotros', url: '/aboutus', icon: 'information-circle' },
     
   ];
   public dark:boolean = false
