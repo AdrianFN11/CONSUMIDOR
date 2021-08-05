@@ -1,5 +1,5 @@
-ion-header,ion-toolbar{
-    --background: rgb(19, 25, 193);
+ion-header,ion-toolbar{ box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --background: blue;
     ion-back-button {
         left: 0;
         top: 2px;
@@ -10,30 +10,31 @@ ion-header,ion-toolbar{
         text-align: center;
         color: white;
     }
+
+  ion-grid{
+    background-color:blue ;
+    width: 415px;
+    height: 145px;
+    position: relative;
+    
+}
+
+    h3{text-align: center; color: white;}
+    ion-avatar{margin: auto;
+        margin-top: 30px;
+        width: 130px;
+        height: 130px;
+        --border-color: blue;
+        }
 }
 ion-content{
-    .title{
-        position: absolute;
-        margin: 10%;
-        font-weight: bolder;
-    }
-    ion-avatar{
-        height: auto;
-        width: 100%;
-        text-align: center;
-        img{
-         height: 120px;
-         width: 120px;
-         margin-top: 20%;
-        }
-    }
+    
+    
+    
+    
     .company-info{
-        margin-top: 5%;
-        ion-col{
-            border-bottom: 1px solid rgb(19, 25, 193);
-            margin-left: 5%;
-            text-align: center !important;
-        }
+       margin-top: 75px;
+       text-align: center;
     }
     .inputs{
        margin-top: 5%;
@@ -58,11 +59,16 @@ ion-content{
     .bottom-button{
         width: 80%;
         height: 40px;
-        background-color: rgb(19, 25, 193);
+        background-color: blue;
         color: white;
         margin-left: 10%;
         margin-top: 5%;
         margin-bottom: 5%;
         border-radius: 10px;
     }
+
+    .T{margin-top:50px; margin-left: 10px; text-align: justify;}
+
+    
 }
+

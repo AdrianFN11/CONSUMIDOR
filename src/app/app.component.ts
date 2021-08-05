@@ -9,8 +9,8 @@ import { Platform } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Perfil', url: '/profile', icon: 'person' },
     { title: 'Inicio', url: '/directory', icon: 'home' },
+    { title: 'Perfil', url: '/profile', icon: 'person' },
     { title: 'Recena reciente', url: '/recentreviews', icon: 'eye' },
     { title: 'Contacto y ayuda', url: '/contact', icon: 'call' },
     { title: 'Acerca de', url: '/aboutus', icon: 'information-circle' },
