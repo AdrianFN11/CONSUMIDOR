@@ -1,8 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-      </ion-buttons>
+    <ion-buttons class="back-btn" slot="start">
+      <ion-button (click)="back()">
+        <ion-icon style="color: white;" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>Crear cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +12,9 @@
 
 
 <ion-content>
+
   <ion-row>
+    <h3>Registrate para que exprese tu experiencia</h3>
     <ion-col size="12">
       <ion-label></ion-label>
     </ion-col>
@@ -24,7 +28,7 @@
     <ion-input formControlName="confirmPassword" type="password" placeholder=" Confirmar contraseña"></ion-input>
     </form>
   </div>
-  <ion-button (click)="signup()" fill="clear" shape="round" class="bottom-button">
+  <ion-button (click)="signup()" fill="clear" shape="round" class="bottom-button" [disabled]="!signupForm.valid"  >
     Crear cuenta
   </ion-button>
 </ion-content>

@@ -11,7 +11,7 @@
         
       </form>
     </div>
-    <ion-button (click)="login()" fill="clear" shape="round">
+    <ion-button (click)="login()" fill="clear" shape="round" [disabled]="!loginForm.valid" >
       Iniciar sesión 
     </ion-button>
     <ion-button (click)="loginWithGoogle()" fill="clear" shape="round" id="google-btn">
