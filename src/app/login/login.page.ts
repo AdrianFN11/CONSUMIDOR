@@ -44,4 +44,7 @@ export class LoginPage implements OnInit {
     this.authService.forgot()
   }
   
+  passwordType: string = 'password';
+  passwordIcon: string = 'eye-off';
+ 
 }
