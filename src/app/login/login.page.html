@@ -7,7 +7,11 @@
     <div class="inputs-div">
       <form [formGroup]="loginForm">
         <ion-input formControlName = "email" type="email" placeholder="Email"></ion-input>
-        <ion-input formControlName = "password" type="password" placeholder="Contraseña"></ion-input>
+        <ion-input formControlName = "password" placeholder="Contraseña"  [type]="passwordType" clearOnEdit="false"></ion-input> 
+        <ion-item lines="none">
+          <ion-checkbox color="success" slot="start" (click)="hideShowPassword()"></ion-checkbox>
+          <ion-label class="L">Mostrar contraseña</ion-label>
+        </ion-item>
       </form>
     </div>
     <ion-button (click)="login()" fill="clear" shape="round" [disabled]="!loginForm.valid" >

@@ -39,7 +39,7 @@ export class SignupPage implements OnInit {
       this.global.presentLoading(`Por favor espere!`)
       this.authService.registerUser(this.signupForm.value).then(() =>{
         this.global.hideLoading()
-        this.global.presentLoading(`Logging in`)
+        this.global.presentLoading(`Inicio sesión`)
         this.authService.loginUser(this.signupForm.value).then(() =>{
           this.global.hideLoading()
           this.nav.navigateForward(['/login'])
@@ -54,4 +54,17 @@ export class SignupPage implements OnInit {
       })
     }
   }
+
+  passwordType: string = 'password';
+  passwordIcon: string = 'eye-off';
+ 
+
+  hideShowPassword() {
+    this.passwordType = this.passwordType === 'text' ? 'password' : 'text';
+    this.passwordIcon = this.passwordIcon === 'eye-off' ? 'eye' : 'eye-off';
+
+
+  }
+
+
 }

@@ -30,13 +30,20 @@
     <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
     <ion-label color="success" *ngIf="signupForm.controls.email.errors?.required && (signupForm.touched || signupForm.dirty)">*Campo requerido</ion-label>
     <ion-label color="dark" *ngIf="signupForm.controls.email.errors?.minlength && (signupForm.touched || signupForm.dirty)">*Debe igressar su email correctamente</ion-label>
-    <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+    <ion-input formControlName="password"placeholder="Contraseña"  [type]="passwordType" clearOnEdit="false"  ></ion-input>
     <ion-label color="success" *ngIf="signupForm.controls.password.errors?.required && (signupForm.touched || signupForm.dirty)">*Campo requerido </ion-label>
     <ion-label color="dark" *ngIf="signupForm.controls.password.errors?.minlength && (signupForm.touched || signupForm.dirty)">*Debe tener al menos 6 caracteres</ion-label>
-    <ion-input formControlName="confirmPassword" type="password" placeholder="Confirmar contraseña"></ion-input>
+    <ion-input formControlName="confirmPassword" placeholder="Confirmar contraseña" [type]="passwordType" clearOnEdit="false"  ></ion-input>
     <ion-label color="success" *ngIf="signupForm.controls.confirmPassword.errors?.required && (signupForm.touched || signupForm.dirty)">*Campo requerido</ion-label>
     <ion-label color="dark" *ngIf="signupForm.controls.confirmPassword.errors?.minlength && (signupForm.touched || signupForm.dirty)">*Confirme la contraseña</ion-label>
-    </form>
+    
+    <ion-item lines="none" >
+    <ion-checkbox class="Ch" slot="start" (click)="hideShowPassword()"></ion-checkbox>
+    <ion-label>Mostrar contraseña</ion-label>
+    </ion-item>
+  
+  
+  </form>
   </div>
   <ion-button (click)="signup()" fill="clear" shape="round" class="bottom-button" [disabled]="!signupForm.valid"  >
     Crear cuenta
