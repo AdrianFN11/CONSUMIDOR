@@ -8,6 +8,7 @@ import { AuthServiceService } from '../services/auth-service.service';
 import { GlobalMethods } from '../services/global';
 import { NavController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-makeareview',
   templateUrl: './makeareview.page.html',
@@ -51,6 +52,7 @@ export class MakeareviewPage implements OnInit {
     let navigationExtras: NavigationExtras = { state: { data: this.data } };
     this.router.navigate(['/make-review', { Animation: true }], navigationExtras);
   }
+
   onModelChange(evt){
 
   }
