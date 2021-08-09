@@ -40,9 +40,9 @@
         (ngModelChange)="onModelChange($event)"
       >
       </rating>
-      <ion-input *ngIf="edit && i === itemIndex"  type="text" placeholder = "Subject" [(ngModel)]="sub"></ion-input>
+      <ion-input *ngIf="edit && i === itemIndex"  type="text" placeholder = "Asunto" [(ngModel)]="sub"></ion-input>
       <ion-label [hidden] = "i === itemIndex && edit === true"  class="title">{{item.subject}}</ion-label><br [hidden] = "i === itemIndex && edit === true"><br [hidden] = "i === itemIndex && edit === true">
-      <ion-textarea *ngIf="edit && i === itemIndex" type="text" placeholder = "Comment" [(ngModel)]="comment"></ion-textarea>
+      <ion-textarea *ngIf="edit && i === itemIndex" type="text" placeholder = "Escriba aquí" [(ngModel)]="comment"></ion-textarea>
       <ion-label [hidden] = "i === itemIndex && edit === true">{{item.comment}}</ion-label>
     </div>
     <ion-button id="edit-btn" fill = "clear" [hidden] = "i === itemIndex && edit === true" (click)="editReview(i)">
