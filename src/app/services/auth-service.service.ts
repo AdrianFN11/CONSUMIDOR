@@ -89,14 +89,14 @@ export class AuthServiceService {
       mode: 'ios',
       cssClass: 'my-custom-alert',
       message: '<img class="img" src="../../assets/images/sad.png" alt="alert" /><br />'
-        + '<ion-label class="label-large">Forget Password?</ion-label><br /><ion-label class="label-small">No Worries</ion-label>' +
+        + '<ion-label class="label-large"> Olvidó su contraseña?</ion-label><br /><ion-label class="label-small">No importa</ion-label>' +
         '',
       inputs: [
         {
           cssClass: 'alert-input',
           name: 'email',
           type: 'email',
-          placeholder: 'Type your email here',
+          placeholder: 'Escriba su correo electrónico aquí',
           
         },
 
@@ -104,7 +104,7 @@ export class AuthServiceService {
       buttons: [
         {
           cssClass: 'alert-button-send',
-          text: 'Send Recovery email',
+          text: 'Enviar correo de recuperación',
           handler: data => {
             this.afAuth.sendPasswordResetEmail(data.email).then(() =>{
               this.global.CreateToast('Check your email!')
@@ -114,7 +114,7 @@ export class AuthServiceService {
             })
           }
         }, {
-          text: 'Cancel',
+          text: 'Cancelar',
           role: 'Cancel',
           cssClass: 'alert-button-cancel',
           handler: () => {

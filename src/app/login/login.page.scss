@@ -14,7 +14,7 @@ ion-content {
         background: white;
         width: 100%;
         height: auto;
-        bottom: 0px;
+        bottom: auto;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: absolute;
@@ -22,7 +22,7 @@ ion-content {
         
         ion-title {
             text-align: center;
-            margin-top: -15%;
+            margin-top: 5%;
             color: white;
             font-size: 24px;
             font-weight: bolder;
