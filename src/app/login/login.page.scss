@@ -6,19 +6,20 @@ ion-content {
         img {
             height: 130px;
             width: 130px;
-            margin-bottom: -3%;
+            
+        
         }
     }
     .main-div {
         background: white;
         width: 100%;
         height: auto;
-        bottom: 10;
+        bottom: 0px;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: absolute;
         background: blue;
-        box-shadow: 0 2px 4px 0 var(--ion-color-dark), 0 3px 10px 0 var(--ion-color-dark);
+        
         ion-title {
             text-align: center;
             margin-top: -15%;
