@@ -15,6 +15,15 @@
 <ion-content>
   <ion-row class="company-info" >
   <ion-col>
+    <ion-list>
+    <ion-item>
+      <!--ion-icon name="star-sharp" slot="start" ></ion-icon-->
+      <h4>Valoraciones recibidas</h4>
+      <ion-badge mode="ios" color="success" slot="end">{{reviews?.length}}</ion-badge>
+    </ion-item>
+  </ion-list>
+
+
   <ion-list lines="none" >
   <ion-item>
     <ion-icon name="business" slot="start" ></ion-icon>
@@ -32,8 +41,10 @@
   </ion-col>
   </ion-row>
 
+<!--li  class="reviews" *ngFor="let item of reviews">
+    {{reviews?.length}}
+</li-->
 
-  
   <ion-button
     (click)="makeReview()"
     fill="clear"
@@ -41,6 +52,10 @@
     class="bottom-button">
     Opinar y valorar
   </ion-button>
+
+
+  
+ 
 
   <ion-title></ion-title>
   <div class="reviews" *ngFor="let item of reviews" >
