@@ -7,13 +7,14 @@ ion-content {
             height: 130px;
             width: 130px;
             margin-bottom: -3%;
+            margin: auto;
         }
     }
     .main-div {
         background: white;
         width: 100%;
         height: auto;
-        bottom: 10;
+        bottom: 0px;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: absolute;
