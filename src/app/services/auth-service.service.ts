@@ -47,7 +47,7 @@ export class AuthServiceService {
         .then(
           res => {
             resolve(res)
-            this.global.CreateToast(`User logged in!`)
+            this.global.CreateToast(`Usuario conectado!`)
           }
         ).catch((err) => {
           reject(err)
