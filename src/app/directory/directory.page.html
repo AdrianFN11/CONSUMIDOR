@@ -6,6 +6,7 @@
     <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
   <ion-searchbar placeholder="Buscar empresa" inputmode="string" type="string" [(ngModel)]="searchText" (ionChange)="searchFilterItem()" [debounce]="250"></ion-searchbar>
 

@@ -3,6 +3,7 @@ ion-content {
         height: auto;
         width: 100%;
         text-align: center;
+        margin-top: 20px;
         img {
             height: 130px;
             width: 130px;
@@ -11,19 +12,19 @@ ion-content {
         }
     }
     .main-div {
-        background: white;
+        
         width: 100%;
         height: auto;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
        
         position: absolute;
-        background: blue;
+        
         
         ion-title {
             text-align: center;
             margin-top: 5%;
-            color: white;
+            color: black;
             font-size: 24px;
             font-weight: bolder;
         }
@@ -33,8 +34,8 @@ ion-content {
             margin-top: 15%;
             margin-bottom: 10%;
             ion-input {
-                color: white; 
-                border-bottom: white 1px solid;
+                 
+                border-bottom: blue 1px solid;
                 margin-top: 5%;
             }
             
@@ -45,8 +46,8 @@ ion-content {
             height: 40px;
             margin-left: 10%;
             // margin-top: 15%;
-            background-color: white;
-            color: blue;
+            background-color: blue;
+            color:white;
             border-radius: 10px;
             text-transform: none;
             margin-bottom: 5%;
@@ -57,7 +58,7 @@ ion-content {
             margin-left: 10%;
             // margin-top: 15%;
             background-color: red;
-            color: white;
+            color:white;
             border-radius: 10px;
             text-transform: none;
             ion-icon{
@@ -69,19 +70,19 @@ ion-content {
             ion-col {
                 ion-label {
                     float: right;
-                    color: white;
+                    ;
                 }
             }
         }
         .bottom-text {
             ion-col {
                 p {
-                    color: white;
+                    color:blue;
                     float: right;
                 }
                 ion-label {
                     float: left;
-                    border-bottom: 1px white solid;
+                    border-bottom: 1px blue solid;
                 }
             }
         }
@@ -94,9 +95,11 @@ ion-content {
 }
  p{text-align: center;}
 
-ion-item{--background: blue;}
+ion-item{}
 
-.L{color: white;}
+.L{}
+
+ion-toolbar{--background:  blue;} ion-title{color: white; text-align: center;}
 
 
     
